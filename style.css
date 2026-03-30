@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #548687;
+    text-align: center;
+}
+
+.container{
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5vmin;
+    
+}
+
+/* Container for player inputs */
+#player-container {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin: 2rem 0;
+}
+
+/* Input fields */
+#player-container input {
+    padding: 0.8rem 1.2rem;
+    width: 180px;
+    border-radius: 0.8rem;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #333;
+    background-color: #ffffc7;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    transition: all 0.2s ease-in-out;
+}
+
+/* Focus effect */
+#player-container input:focus {
+    transform: scale(1.05);
+    box-shadow: 0 0 1rem #b0413e;
+}
+
+/* Placeholder styling */
+#player-container input::placeholder {
+    color: #b0413e;
+    opacity: 0.7;
+    font-weight: normal;
+}
+
+.game{
+    height: 60vmin;
+    width: 60vmin;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5vmin;
+}
+
+.box{
+    height: 18vmin;
+    width: 18vmin;
+    border-radius: 1rem;
+    border: none;
+    box-shadow: 0 0 1rem rgba(0,0,0,0.1 );
+    font-size: 8vmin;
+    color: #b0413e;
+    background-color: #ffffc7;
+
+}
+
+#reset-btn{
+    padding: 1rem;
+    font-size: 1.25rem;
+    background-color: #191913;
+    color: white;
+    border-radius: 1rem;
+    border: none;
+}
+#new-btn{
+    padding: 1rem;
+    font-size: 1.25rem;
+    background-color: #191913;
+    color: white;
+    border-radius: 1rem;
+    border: none;
+}
+
+#msg{
+    color: #ffffc7;
+    font-size: 8vmin;
+}
+
+.msg-container{
+    height: 100vmin;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+.hide{
+    display: none;
+}
